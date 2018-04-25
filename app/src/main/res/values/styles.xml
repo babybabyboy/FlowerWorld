@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!--修改app主题颜色-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#008B00</item>
+        <item name="colorPrimaryDark">#008B00</item>
+        <item name="colorAccent">#8E388E</item>
+        <item name="android:navigationBarColor">#008B00</item>
+    </style>
+
+    <!-- 设置Toolbar标题字体的大小和颜色 默认白色-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- toolbar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/black</item>
+    </style>
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">@android:color/darker_gray</item>
+    </style>
+
+    <!--去掉系统默认的标题栏,隐藏ActionBar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" /-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    </style>
+</resources>

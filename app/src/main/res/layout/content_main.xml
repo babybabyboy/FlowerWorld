@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ContentMianActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Centent_Main"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!--!!!!!!!!!!!!!!!-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <!--分界线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <!--新布局测试-->
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tab_bg"
+        android:layout_alignParentBottom="true">
+
+        <!--控制-->
+        <LinearLayout
+            android:id="@+id/ll_control"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--icon-->
+                <TextView
+                    android:id="@+id/tv_control_normal"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/chats"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_control_press"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/chats_green"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <!--text-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_control_text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_control_text_press"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--朋友圈-->
+        <LinearLayout
+            android:id="@+id/ll_friendcircle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--icon-->
+                <TextView
+                    android:id="@+id/tv_friendcircle_normal"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/contacts"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_friendcircle_press"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/contacts_green"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <!--text-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_friendcircle_text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friendcircle"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_friendcircle_text_press"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friendcircle"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--商城-->
+        <LinearLayout
+            android:id="@+id/ll_store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--icon-->
+                <TextView
+                    android:id="@+id/tv_store_normal"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/about_me"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_store_press"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/about_me_green"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <!--text-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_store_text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_store_text_press"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--发现-->
+        <LinearLayout
+            android:id="@+id/ll_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--icon-->
+                <TextView
+                    android:id="@+id/tv_discover_normal"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/discover"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_discover_press"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/discover_green"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <!--text-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_discover_text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_discover_text_press"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">花卉世界</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="control">控制</string>
+    <string name="friendcircle">朋友圈</string>
+    <string name="store">商城</string>
+    <string name="discover">发现</string>
+
+
+</resources>

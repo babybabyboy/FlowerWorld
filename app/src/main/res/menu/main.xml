@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@mipmap/searchicon"
+        android:title="search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/plus_iocn"
+        android:icon="@mipmap/plus_icon"
+        android:title="plus"
+        app:showAsAction="ifRoom"/>
+
+    <!-- 删除更多
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+      -->
+</menu>

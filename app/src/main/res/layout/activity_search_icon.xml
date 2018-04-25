@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_icon"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:background="@color/AppStyleColor"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/id_search_back_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/bac_icon" />
+
+        <EditText
+            android:id="@+id/id_search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="搜索"
+            android:inputType="text"
+            android:maxLines="1"
+            android:lines="1"
+            android:lineSpacingExtra="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/id_search_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/searchicon"/>
+    </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/id_search_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+         </WebView>
+
+</LinearLayout>
