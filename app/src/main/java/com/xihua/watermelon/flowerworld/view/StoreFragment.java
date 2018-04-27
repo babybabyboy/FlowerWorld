@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
+import com.xihua.watermelon.flowerworld.MyComponent.MyItemDecoration;
 import com.xihua.watermelon.flowerworld.R;
 import com.xihua.watermelon.flowerworld.adapter.MyStoreAdapter;
 
@@ -57,6 +58,8 @@ public class StoreFragment extends Fragment{
         设置适配器
          */
         myAdapter = new MyStoreAdapter(mDataList);
+        //添加装饰类
+        mRecyclerView.addItemDecoration(new MyItemDecoration(getContext()));
         mRecyclerView.setAdapter(myAdapter);
     }
 
