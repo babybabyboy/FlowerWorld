@@ -29,4 +29,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //implementation 'com.david.gradientuilib:gradientuilibrary:1.0.1'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation files('libs/android-async-http-1.4.8.jar')
+    implementation files('libs/android-smart-image-view-1.0.0.jar')
+    implementation files('libs/httpcore-4.4.4.jar')
 }
